@@ -22,3 +22,7 @@ Audio: Integrated sound effects to enhance the user experience.
 
 Demo:  
 https://er-mayur.github.io/Simon-Game/
+
+<img width="1470" alt="Screenshot 2024-08-10 at 12 28 31 AM" src="https://github.com/user-attachments/assets/fd7abfe8-507a-4350-8520-e6496caf1ba8">
+
+
