@@ -19,3 +19,6 @@ Technologies Used:
 HTML/CSS: For structuring and styling the game interface.  
 JavaScript/jQuery: For game logic, event handling, and animations.  
 Audio: Integrated sound effects to enhance the user experience.  
+
+Demo:  
+https://er-mayur.github.io/Simon-Game/
