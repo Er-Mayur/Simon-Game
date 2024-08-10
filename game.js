@@ -31,7 +31,7 @@ function newGame() {
         start = 0;
         randomChosenColour = [];
         nextSequence();
-    }, 500);
+    }, 1000);
     
 }
 
