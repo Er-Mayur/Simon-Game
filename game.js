@@ -8,10 +8,13 @@ var gameIsStart = false;
 // Detect if the screen is small (likely a mobile device)
 if ($(window).width() <= 1000) {
     // Start game on touch/click event for mobile devices
-    $(document).click(function () {
+    $("h1").click(function () {
         if (!gameIsStart) {
             gameIsStart = true;
-            newGame();
+
+            setTimeout(function () {
+                newGame();
+            }, 1000);
         }
     });
 } else {
@@ -26,13 +29,10 @@ if ($(window).width() <= 1000) {
 
 
 function newGame() {
-    setTimeout(function () {
-        level = 0;
-        start = 0;
-        randomChosenColour = [];
-        nextSequence();
-    }, 1000);
-    
+    level = 0;
+    start = 0;
+    randomChosenColour = [];
+    nextSequence();
 }
 
 function nextSequence() {
