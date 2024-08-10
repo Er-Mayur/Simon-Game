@@ -4,13 +4,26 @@ var start = 0;
 var level = 0;
 var gameIsStart = false;
 
-// keyboad input to start
-$(document).keypress(function (event) {
-    if (!gameIsStart) {
-        gameIsStart = true;
-        newGame();
-    }
-});
+
+// Detect if the screen is small (likely a mobile device)
+if ($(window).width() <= 1000) {
+    // Start game on touch/click event for mobile devices
+    $(document).click(function () {
+        if (!gameIsStart) {
+            gameIsStart = true;
+            newGame();
+        }
+    });
+} else {
+    // Start game on keyboard input for desktop
+    $(document).keypress(function () {
+        if (!gameIsStart) {
+            gameIsStart = true;
+            newGame();
+        }
+    });
+}
+
 
 function newGame() {
     level = 0;

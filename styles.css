@@ -1,6 +1,11 @@
+html{
+  height: 100%;
+}
+
 body {
   text-align: center;
   background-color: #011F3F;
+  
 }
 
 #level-title {
@@ -12,18 +17,19 @@ body {
 
 .container {
   display: block;
-  width: 50%;
   margin: auto;
+  justify-content: center;
 
 }
 
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+  min-width: 200px;
+  min-height: 200px;
+
 }
 
 .game-over {
