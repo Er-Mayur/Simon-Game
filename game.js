@@ -26,10 +26,13 @@ if ($(window).width() <= 1000) {
 
 
 function newGame() {
-    level = 0;
-    start = 0;
-    randomChosenColour = [];
-    nextSequence();
+    setTimeout(function () {
+        level = 0;
+        start = 0;
+        randomChosenColour = [];
+        nextSequence();
+    }, 500);
+    
 }
 
 function nextSequence() {
