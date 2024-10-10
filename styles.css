@@ -14,7 +14,9 @@ body {
   margin:  5%;
   color: #FEF2BF;
 }
-
+#high-score{
+  color: #FEF2BF;
+}
 .container {
   display: block;
   margin: auto;
