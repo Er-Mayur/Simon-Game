@@ -49,6 +49,7 @@ function saveHighScore(newHighScore) {
 
 // Detect if the screen is small (likely a mobile device)
 if ($(window).width() <= 1000) {
+<<<<<<< HEAD
   $("h1").click(function () {
     if (!gameIsStart) {
       gameIsStart = true;
@@ -57,6 +58,18 @@ if ($(window).width() <= 1000) {
       }, 1000);
     }
   });
+=======
+    // Start game on touch/click event for mobile devices
+    $("h1").click(function () {
+        if (!gameIsStart) {
+            gameIsStart = true;
+
+            setTimeout(function () {
+                newGame();
+            }, 1000);
+        }
+    });
+>>>>>>> origin/main
 } else {
   $(document).keypress(function () {
     if (!gameIsStart) {

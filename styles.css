@@ -13,6 +13,10 @@ body {
   font-size: 3rem;
   margin:  5%;
   color: #FEF2BF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 #high-score{
   color: #FEF2BF;
