@@ -49,16 +49,6 @@ function saveHighScore(newHighScore) {
 
 // Detect if the screen is small (likely a mobile device)
 if ($(window).width() <= 1000) {
-<<<<<<< HEAD
-  $("h1").click(function () {
-    if (!gameIsStart) {
-      gameIsStart = true;
-      setTimeout(function () {
-        newGame();
-      }, 1000);
-    }
-  });
-=======
     // Start game on touch/click event for mobile devices
     $("h1").click(function () {
         if (!gameIsStart) {
@@ -69,7 +59,6 @@ if ($(window).width() <= 1000) {
             }, 1000);
         }
     });
->>>>>>> origin/main
 } else {
   $(document).keypress(function () {
     if (!gameIsStart) {
@@ -104,7 +93,7 @@ function addAnimation(userButtonPressId) {
 }
 
 function playSound(soundName) {
-  var audio = new Audio("./sounds/" + soundName + ".mp3");
+  var audio = new Audio("./sound/" + soundName + ".mp3");
   audio.play();
 }
 
@@ -134,7 +123,7 @@ $(".btn").click(function () {
       if (level > highScore) {
         highScore = level;
         saveHighScore(highScore); // Save the new high score
-        changeHeading("New High Score: " + highScore);
+        changeHeading("New High Score: " + highScore + "Game Over, Press Any Key to Restart");
       } else {
         changeHeading("Game Over, Press Any Key to Restart");
       }
